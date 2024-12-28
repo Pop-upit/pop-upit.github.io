@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
 
     /* Button Styling for Primary Action */
     .btn-primary {
-      background-color: #2696ca; /* Darker blue */
+      background-color: #96c8df; /* Darker blue */
       color: #fff;
       padding: 14px 24px;
       font-size: 1.125rem;
@@ -148,67 +149,71 @@
 
   <!-- Navigation Bar (Fixed on top) -->
  <!-- Navbar -->
-<nav class="bg-black text-white fixed top-0 w-full z-50 shadow-lg">
+<nav class="bg-[#96c8df] text-white fixed top-0 w-full z-50 shadow-lg">
   <div class="container mx-auto flex justify-between items-center py-6 px-4">
     <div class="text-2xl font-semibold">
       <img src="https://i.ibb.co/1dNPY5m/logo.png" alt="Brand Logo" class="logo w-20 h-20 cursor-pointer transition-all glow-effect">
 
-<style>
-  /* Remove border radius */
-  .logo {
-    border-radius: 50px; /* No border radius */
-  }
+      <style>
+        /* Remove border radius */
+        .logo {
+          border-radius: 50px; /* No border radius */
+        }
 
-  /* Flashing light effect */
-  .glow-effect {
-    position: relative;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* White glow effect */
-    transition: box-shadow 0.3s ease-in-out;
-  }
+        /* Flashing light effect */
+        .glow-effect {
+          position: relative;
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* White glow effect */
+          transition: box-shadow 0.3s ease-in-out;
+        }
 
-  /* Animation for the flashing light effect */
-  .glow-effect:hover {
-    animation: pulse-glow 1.5s infinite alternate;
-  }
+        /* Animation for the flashing light effect */
+        .glow-effect:hover {
+          animation: pulse-glow 1.5s infinite alternate;
+        }
 
-  @keyframes pulse-glow {
-    0% {
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    }
-    50% {
-      box-shadow: 0 0 30px rgba(255, 255, 255, 1);
-    }
-    100% {
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    }
-  }
-
-  
-</style>
+        @keyframes pulse-glow {
+          0% {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+          }
+          50% {
+            box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+          }
+          100% {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+          }
+        }
+      </style>
 
     </div>
 
-    
     <div class="hidden md:flex space-x-24">
       <a href="#home" class="text-lg hover:text-[#2696ca] transition-all">Home</a>
       <a href="#services" class="text-lg hover:text-[#2696ca] transition-all">Services</a>
       <a href="#about" class="text-lg hover:text-[#2696ca] transition-all">About</a>
+      <a href="#Project" class="text-lg hover:text-[#2696ca] transition-all">Projects</a>
       <a href="#contact" class="text-lg hover:text-[#2696ca] transition-all">Contact</a>
       
     </div>
+
     <div class="md:hidden" id="hamburger-icon">
       <svg xmlns="https://i.ibb.co/1dNPY5m/logo.png" fill="none" viewBox="0 0 12 24" stroke="currentColor" class="h-8 w-8 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </div>
   </div>
+
   <div class="hidden bg-black text-white space-y-4 py-4" id="mobile-menu">
     <a href="#home" class="block px-6 py-2">Home</a>
     <a href="#services" class="block px-6 py-2">Services</a>
     <a href="#about" class="block px-6 py-2">About</a>
+    <a href="#Project" class="block px-6 py-2">Projects</a>
     <a href="#contact" class="block px-6 py-2">Contact</a>
   </div>
 </nav>
+
+
+
 
 
 <!-- Hero Section -->
@@ -231,6 +236,42 @@
 
 
 <!-- Hero Section -->
+
+ <!-- About section -->
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50">
+      <div class="container mx-auto flex flex-wrap items-center justify-between px-4">
+        <!-- Left Div (Image) -->
+        <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-8 sm:mb-0 flex justify-center">
+          <img src="https://i.ibb.co/1dNPY5m/logo.png" alt="Company Logo" class="shadow-lg rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl hover:shadow-black max-w-[700px] max-h-[768px]" id="animated-logo">
+        </div>
+    
+        <!-- Right Div (Company Description) -->
+        <div class="w-full sm:w-2/3 md:w-2/3 lg:w-2/3">
+          <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6">About "FPOP-UP"</h2>
+          <p class="text-lg sm:text-xl text-gray-600 mb-8">At "FPOP-UP", we pride ourselves on delivering innovative and high-quality solutions that empower businesses to grow, succeed, and transform. With years of expertise in [your industry or service area], our team is dedicated to helping clients achieve their goals by providing cutting-edge technology, exceptional service, and a commitment to excellence.</p>
+          <p class="text-lg sm:text-xl text-gray-600">Our mission is to enable organizations of all sizes to unlock their potential, navigate the digital landscape with confidence, and achieve long-term success. We believe in creating partnerships with our clients, offering personalized, reliable services that add value and drive meaningful results. Let us help you bring your vision to life.</p>
+        </div>
+      </div>
+    
+      <style>
+        /* Apply border radius and initial shadow to the image */
+        #animated-logo {
+          border-radius: 8px; /* Rounded corners for a more professional look */
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Light shadow for the image */
+          transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom and shadow */
+        }
+    
+        /* Hover effects */
+        #animated-logo:hover {
+          transform: scale(1.1); /* Zoom-in effect on hover */
+          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+        }
+      </style>
+    </section>
+    
+
+      <!-- About section -->
 
   <!-- Services Section -->
   <section id="services" class="py-20 bg-gray-100">
@@ -263,13 +304,7 @@
           </div>
         </div>
 
-        <!-- Service 4: SEO & Marketing -->
-        <div class="w-full sm:w-1/3 px-4 mb-8">
-          <div class="service-card">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-800">SEO & Marketing</h3>
-            <p class="text-lg text-gray-600">Our SEO experts will help your website rank higher on search engines, driving more organic traffic. We also offer comprehensive digital marketing services to ensure your business gets the visibility it deserves.</p>
-          </div>
-        </div>
+       
 
         <!-- Service 5: Mobile App Development -->
         <div class="w-full sm:w-1/3 px-4 mb-8">
@@ -279,64 +314,88 @@
           </div>
         </div>
 
-        <!-- Service 6: Branding & Graphics Design -->
+        <!-- Service 4: CRM Software -->
         <div class="w-full sm:w-1/3 px-4 mb-8">
           <div class="service-card">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Branding & Graphics Design</h3>
-            <p class="text-lg text-gray-600">We offer professional branding services, including logo design, visual identity, and more. Our designs communicate your brand's message clearly and help establish a strong presence in the market.</p>
-          </div>
-        </div>
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">CRM Software</h3>
+             <p class="text-lg text-gray-600">Our CRM software solutions help you manage customer relationships, streamline communication, and automate workflows. With a user-friendly interface and powerful features, our CRM systems help you increase sales, improve customer satisfaction, and grow your business.</p>
+       </div>
+      </div>
+
+       <!-- Service 5: Hosting -->
+      <div class="w-full sm:w-1/3 px-4 mb-8">
+        <div class="service-card">
+         <h3 class="text-2xl font-semibold mb-4 text-gray-800">Hosting</h3>
+      <p class="text-lg text-gray-600">We offer reliable and secure hosting solutions to ensure that your website runs smoothly 24/7. Our hosting services include fast load times, high uptime, and scalable options to meet the needs of your growing business.</p>
+    </div>
+  </div>
+
+    <!-- Service 6: Content Writing -->
+<div class="w-full sm:w-1/3 px-4 mb-8">
+  <div class="service-card">
+    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Content Writing</h3>
+    <p class="text-lg text-gray-600">Our content writing services provide high-quality, engaging, and SEO-optimized content tailored to your audience. Whether it's website copy, blogs, or product descriptions, we help you communicate your brand's message effectively and improve your search engine rankings.</p>
+  </div>
+</div>
+
 
       </div>
     </div>
   </section>
 
-  <!-- About section -->
-    <!-- About Section -->
-<section id="about" class="py-24 bg-gray-50">
-  <div class="container mx-auto flex flex-wrap items-center justify-between">
-    <!-- Left Div (Image) -->
-    <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-8 sm:mb-0 flex justify-center">
-      <section id="about" class="py-24 bg-gray-50">
-        <div class="container mx-auto flex flex-wrap items-center justify-between">
-          <!-- Left Div (Image) -->
-          <div class="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-8 sm:mb-0 flex justify-center">
-            <img src="https://i.ibb.co/1dNPY5m/logo.png" alt="Company Logo" class="shadow-lg rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl hover:shadow-black max-w-[700px] max-h-[768px]" id="animated-logo">
-          </div>
+ <!-- Projects Section -->
+ <section id="Project" class="py-16 bg-gray-100">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Our Projects</h2>
+    <p class="text-lg text-gray-600 text-center mb-12">Our projects showcase a blend of innovation, creativity, and expertise, aimed at delivering impactful solutions. From cutting-edge technology to sustainable designs, each project is a step toward shaping the future and making a positive difference in the communities we serve.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="path/to/project-image1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Project Title 1</h3>
+          <p class="text-gray-600 mb-4">A brief description of the project goes here. It could explain the project goals, results, or technology used.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">View Details</a>
         </div>
-      </section>
+      </div>
       
-      <style>
-        /* Apply border radius and initial shadow to the image */
-        #animated-logo {
-          border-radius: 8px; /* Rounded corners for a more professional look */
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Light shadow for the image */
-          transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom and shadow */
-        }
-      
-        /* Hover effects */
-        #animated-logo:hover {
-          transform: scale(1.1); /* Zoom-in effect on hover */
-          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
-        }
-      
-      </style>
-      
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="path/to/project-image2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Project Title 2</h3>
+          <p class="text-gray-600 mb-4">A brief description of the project goes here. It could explain the project goals, results, or technology used.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">View Details</a>
+        </div>
+      </div>
 
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="path/to/project-image3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Project Title 3</h3>
+          <p class="text-gray-600 mb-4">A brief description of the project goes here. It could explain the project goals, results, or technology used.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">View Details</a>
+        </div>
+      </div>
 
-    </div>
+      <!-- Project 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="path/to/project-image4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Project Title 4</h3>
+          <p class="text-gray-600 mb-4">A brief description of the project goes here. It could explain the project goals, results, or technology used.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800">View Details</a>
+        </div>
+      </div>
 
-    <!-- Right Div (Company Description) -->
-    <div class="w-full sm:w-2/3 md:w-2/3 lg:w-2/3">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6">About "FPOP-UP"</h2>
-      <p class="text-lg sm:text-xl text-gray-600 mb-8">At "FPOP-UP", we pride ourselves on delivering innovative and high-quality solutions that empower businesses to grow, succeed, and transform. With years of expertise in [your industry or service area], our team is dedicated to helping clients achieve their goals by providing cutting-edge technology, exceptional service, and a commitment to excellence.</p>
-      <p class="text-lg sm:text-xl text-gray-600">Our mission is to enable organizations of all sizes to unlock their potential, navigate the digital landscape with confidence, and achieve long-term success. We believe in creating partnerships with our clients, offering personalized, reliable services that add value and drive meaningful results. Let us help you bring your vision to life.</p>
     </div>
   </div>
 </section>
 
 
-      <!-- About section -->
 
   <!--Why choose me -->
  
@@ -429,6 +488,8 @@
 <section id="reviews" class="py-24 bg-white">
   <div class="container mx-auto text-center">
     <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-12">What Our Clients Say</h2>
+    <p class="text-lg text-gray-600 mb-12">We take pride in delivering exceptional results that exceed expectations. Hear directly from our valued clients about how our solutions have made a lasting impact on their businesses and helped them achieve their goals. Their success is our success.</p>
+
     
     <div class="flex flex-wrap justify-center gap-8">
       <!-- Review 1 -->
